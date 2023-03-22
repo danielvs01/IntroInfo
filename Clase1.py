@@ -140,3 +140,42 @@ print(activo)
 intenso = intensidad == "Alta"
 print("El usuario es intenso?")
 print(intenso)
+
+
+print("---------------------")
+
+# Los programas inteligentes usa booleanos para tomar decisiones sobre si ejecutar lineas de codigo u omitirlas
+
+activo = True
+if activo == True:
+    print("El usuario esta activo")
+    activo = False
+    num = 20
+
+print("---------------------")
+
+pagado = True
+if pagado:
+    print("El articulo esta pagado")
+else:
+    print("Moroso, por favor pague")
+
+print("---------------------")
+
+nota = 80
+if nota <= 80:
+    print("Penales, mamei")
+else:
+    print("Pasaste, bien soldado")
+
+print("---------------------")
+
+porcentaje = 65
+if porcentaje < 60:
+    print("Reprobado")
+elif porcentaje < 70:
+    print("Penales")
+else:
+    print("Aprobaste")
+
+
