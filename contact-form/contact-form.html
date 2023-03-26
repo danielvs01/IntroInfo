@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- FONT GOOGLE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <!-- animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="content animate__animated animate__fadeInLeftBig">
+        <h1 class="logo">Contáctenos <span>aquí</span></h1>
+
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Información</h3>
+                <form action="https://formsubmit.co/danielvsolano1@gmail.com" method="POST">
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número telefónico</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <button>
+                        Enviar 
+                    </button>
+
+                    <input type="hidden" name="_subject" value="Nueva proforma">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact-form.html">
+
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Más Información</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Barrio CTPBA</li>
+                    <li><i class="fas fa-phone"></i> +506 8549-8212</li>
+                    <li><i class="fas fa-envelope-open-text"></i> danielvsolano1@gmail.com</li>
+                </ul>
+                <p>Creado hace mucho tiempo como un juguete para un príncipe solitario, la marioneta encantada Shaco ahora se deleita en el asesinato y el caos. Corrompido por la magia oscura y la pérdida de su amada carga, la marioneta que alguna vez fue amable encuentra placer solo en la miseria de las pobres almas que atormenta.</p>
+                <p>Døna en LoL</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
