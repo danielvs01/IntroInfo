@@ -178,4 +178,92 @@ elif porcentaje < 70:
 else:
     print("Aprobaste")
 
+print("---------------------")
 
+# Bucle WHILE Y FOR
+# Un bucle While repite su bucle de codigo mientras su condicion es TRUE
+
+# Para detener un bucle creamos unavariable antes de crear un bucle
+control = True
+while control == True:
+    print("Hola Mundo")
+    control = False
+    print("Se mostró una vez")
+
+print("---------------------")
+
+# Para controlar las veces que se repite un bucle while cokenzamos con una variable establecida en un numero. Llamamos a esta variable contador
+
+contador = 1
+while contador < 10:
+    print(contador)
+    contador += 1
+
+print("---------------------")
+
+# calculo de interes compuesto
+cuenta = 1000
+interes = 0.11
+anos = 50
+print("Monto inicial " , cuenta)
+
+contador = 1
+while contador <= anos:
+    interes_compuesto = cuenta * interes
+    cuenta += interes_compuesto
+    cuenta += 100
+    print("Año: " , contador,": ", cuenta)
+    contador += 1
+
+print("---------------------")
+# 1.Hacer un programa que calcule la suma, resta, multiplicación y división de dos números ingresados por el usuario.
+
+num1 = int(input("Seleccione un numero: "))
+num2 = int(input("Seleccione otro numero: "))
+eleccion = int(input("Seleccione el calculo que desea: \n 1 SUMA  \n 2 RESTA \n 3 MULTIPLICACION \n 4 DIVISION \n :"))
+suma = num1 + num2
+resta = num1 - num2
+multi = num1 * num2 
+division = num1 / num2
+if eleccion == 1:
+    print(suma)
+elif eleccion == 2:
+    print(resta)
+elif eleccion == 3:
+    print(multi)
+elif eleccion == 4:
+    print(division)
+
+print("---------------------")
+# 2.Hacer un programa que calcule el área y la circunferencia de un círculo.
+
+radio = int(input("Ingrese el radio: "))
+diametro = radio*2
+area = 3.14*radio**2
+circun = 3.14*diametro
+print("El area del circulo es: ", area)
+print("La circunferencia del circulo es :", circun)
+
+print("---------------------")
+# 4.Hacer un programa que determine si un número ingresado por el usuario es par o impar.
+
+numero = int(input("Ingrese un numero: "))
+
+if numero % 2 == 0:
+    print(numero, "es par.")
+else:
+    print(numero, "es impar.")
+
+print("---------------------")
+# 5.Hacer un programa que calcule la tabla de multiplicar de un número ingresado por el usuario.
+num = int(input("Ingrese un numero: "))
+for i in range(11):
+    print(num," * ", i, " = ", num*i)
+
+print("---------------------")
+# 6.Hacer un programa que cuente la cantidad de letras y números en un texto ingresado por el usuario.
+name = input("Elija una palabra: ")
+cant_letras = len(name)
+print(name, "tiene", cant_letras, "numeros y", cant_letras, "letras")
+
+print("---------------------")
