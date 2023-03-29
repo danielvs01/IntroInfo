@@ -262,5 +262,7 @@ for i in range(11):
 
 print("---------------------")
 # 6.Hacer un programa que cuente la cantidad de letras y números en un texto ingresado por el usuario.
-
+name = input("Elija una palabra: ")
+cant_letras = len(name)
+print(name, "tiene", cant_letras, "numeros y", cant_letras, "letras")
 print("---------------------")
